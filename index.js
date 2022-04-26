@@ -52,7 +52,9 @@ function snapCracklePrime(mxValue){
     }
 
     for(let y=0;y<result2.length;y++){
-        if (isPrime(y+1)=== true){
+        if (y+1===2){
+            result2[y] = 'Prime'
+        } else if (isPrime(y+1)=== true){
             result2[y] += 'Prime'
         }
     }
